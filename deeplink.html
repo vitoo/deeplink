@@ -1,22 +1,15 @@
 <a href="#toto" id="deeplink">Deeplink</a>
 
 <script>
-
 const queryString = window.location.search;
- 
-  
-  const urlParams = new URLSearchParams(queryString);
-
-  const deeplink = urlParams.get('deeplink')
- 
- 
- let element = document.getElementById("deeplink");
- element.href=deeplink;
- 
+const urlParams = new URLSearchParams(queryString);
+const deeplink = urlParams.get('deeplink')
+let element = document.getElementById("deeplink");
+element.href=deeplink; 
 </script>
 
 <style>
-body{
-font-size: 150px;
-}
+ body{
+ font-size: 150px;
+ }
 </style>
